@@ -518,6 +518,16 @@ nav{
     margin-bottom:10px;
     
  }
+ .posts-2{
+    height:90vh;
+    width:90%;
+    margin-inline: auto;
+    margin-top: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom:10px;
+    
+ }
  .user-info{
     height: 80px;
     width: 100%;
@@ -596,6 +606,8 @@ nav{
     width: 100%;
  }
  .react-area{
+    border-top: 1px solid black;
+    margin-top:20px;
     height:30px;
     width:100%;
     display:flex;
@@ -604,9 +616,25 @@ nav{
  }
  .react-area > div{
     height: 29px;
-    width:100px;
-    
+    width:150px;
+    margin-top:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
  }
- .like p{
-    display: inline;
+ .react-area > div:hover{
+background-color: #dedede; 
+
+}
+ .react-area p{
+    display: inline-block;
+    margin-left: 10px;
+ }
+ .post-image-container-1{
+    height:60vh;
+    width:99%;
+    margin-left:3px;
+    object-fit: cover;
+    overflow: hidden;
  }
