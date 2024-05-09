@@ -516,21 +516,97 @@ nav{
     background-color: #fff;
     border-radius: 10px;
     margin-bottom:10px;
+    
  }
  .user-info{
     height: 80px;
     width: 100%;
-    border-bottom: 1px solid #000;
     margin-inline: 20px;;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .user-detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
  }
  .user-logo{
-    width:50px;
-    height: 50px;
+    width:45px;
+    height: 45px;
     border-radius: 50%;
     overflow: hidden;
-    border-radius: 50%;
+    object-fit: cover;
 }
  .user-logo img{
     height:100%;
     width:100%;
+ }
+ .person-name{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:15px;
+    margin-left:15px;
+    position: relative;
+ }
+ .person-name a{
+    color:black;
+    text-decoration: none;
+ }
+ .person-name a:hover{
+    color:black;
+    text-decoration: underline;
+
+ }
+ .upload-time{
+    font-size:10px;
+    float:left;
+ }
+ .person-name i{
+    font-size: 10px;
+    margin-left: 5px;
+   
+    position: absolute;
+    top: 22px;
+ }
+ .right-icon{
+    display: flex;
+    width: 70px;
+    justify-content: space-between;
+    margin-right: 45px;
+ }
+ .right-icon >  div{
+    padding:5px;
+    border-radius:50%;
+    font-size:22px;
+ }
+ .right-icon > div:hover{
+  background-color: #dedede;
+  cursor: pointer;
+ }
+ .post-image-container{
+    height:70vh;
+    width:99%;
+    margin-left:3px;
+    object-fit: cover;
+    overflow: hidden;
+
+ }
+ .post-image-container img{
+    height: 100%;
+    width: 100%;
+ }
+ .react-area{
+    height:30px;
+    width:100%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+ }
+ .react-area > div{
+    height: 29px;
+    width:100px;
+    
+ }
+ .like p{
+    display: inline;
  }
