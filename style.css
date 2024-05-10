@@ -638,3 +638,42 @@ background-color: #dedede;
     object-fit: cover;
     overflow: hidden;
  }
+.chat{
+    position: absolute;
+    left: 1000px;
+    top: 80px;
+    height: 100vh;
+    width: 300px;
+    z-index: -1;
+   
+}
+.chat-header{
+    height: 20px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#65676B;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 10px;
+}
+.chat-icon{
+    width:70px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.chat-icon > div{
+    height:30px;
+    width:30px;
+   text-align: center;
+ 
+
+}
+.chat-icon div:hover{
+    background-color: #999ca0;
+
+}
