@@ -60,9 +60,10 @@ nav{
 }
 .quick-links{
 	display: inline-flex;
-	width:400px;
+	width:500px;
 	justify-content: space-between;
 	align-items: center;
+    margin-right:100px;
 }
 .quick-links >div{
 	height: 40px;
@@ -74,18 +75,41 @@ nav{
     border-radius: 10px;
 
 }
+.personal-links > div:hover{
+    background-color: #dedede;
+    cursor: pointer;
+}
 .quick-links > div:hover{
 	 background: #f0f2f5;
     color: blue;
     cursor: pointer;
 }
 .personal-links{
-	width:400px;
+	width:200px;
 	height: 30px;
-
-	font-size: 25px;
+    margin-right: 10px;;
 	display: inline-flex;
 	justify-content: space-around;
+    align-items: center;
+}
+.personal-links >div{
+    height:30px;
+    width:30px;
+    border-radius: 50%;
+    font-size:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.personal-img{
+    height: 40px;
+    width:40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.personal-img > img{
+    height: auto;
+    width:100%;
 }
 .side-menu{
     width: 300px;
@@ -123,12 +147,12 @@ nav{
 }
 
 .image-profile img {
-    width: 100%; /* Ensure the image takes up the full width of the div */
-    height: auto; /* Maintain aspect ratio */
-    position: absolute; /* Position the image absolutely */
-    top: 50%; /* Move the image vertically to the center */
-    left: 50%; /* Move the image horizontally to the center */
-    transform: translate(-50%, -50%); /* Center the image precisely */
+    width: 100%; 
+    height: auto; 
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
 }
 .side-menu-1{
 	display: inline-flex;
@@ -378,7 +402,7 @@ nav{
 }
 .story-3{
     position: relative;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?cs=srgb&dl=pexels-italo-melo-881954-2379004.jpg&fm=jpg");
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url("https://t.ly/PgKR1");
     background-size: cover;
     background-position: center;
  }
@@ -401,7 +425,7 @@ nav{
  }
  .story-4{
     position: relative;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?cs=srgb&dl=pexels-italo-melo-881954-2379004.jpg&fm=jpg");
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url("https://t.ly/uzMaL"); 
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -416,22 +440,7 @@ nav{
      border:4px solid rgb(34, 34, 231);
      
  }
-.story-4::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?cs=srgb&dl=pexels-italo-melo-881954-2379004.jpg&fm=jpg");
-    background-size: cover;
-    background-position: center;
-    transition: transform 0.3s ease, background-size 0.3s ease; /* Transition for smooth effect */
-}
 
-.story-4:hover::before {
-    background-size: 120%; /* Zoom effect on hover */
-}
 
  .story-4 > p {
      position :absolute;
@@ -680,46 +689,6 @@ background-color: #dedede;
 .chat-icon div:hover {
     background-color: #999ca0;
 }
-/*
-.contacts{
-    height:80vh;
-    width:100%;
-    background-color: #fff;
-}
-.person-detail{
-	display: inline-flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-	height: 40px;
-    padding: 5px;
-    border-radius: 10px 0 0 10px;
-}
-.person-detail:hover{
-	background-color:#f0f2f5;
-
-}
-
-.person-image {
-	width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    overflow: hidden;
-    position: relative;
-    margin-right: 10px;
-    border:3px solid green;
-    float:left;
-}
-
-.person-image img {
-    width: 100%; 
-    height: auto; 
-    position: absolute;
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-}
-*/
 .contacts{
     height: 100vh;
     width:100%;
@@ -746,6 +715,9 @@ background-color: #dedede;
     border: 2px solid blue;
    
 }
+.rm{
+    border: none;
+}
 .person-name1{
     margin:10px
 }
@@ -762,7 +734,4 @@ background-color: #dedede;
 .person-image img{
     height: auto;
     width:100%;
-}
-.last-detail{
-    
 }
